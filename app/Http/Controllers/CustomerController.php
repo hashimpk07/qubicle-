@@ -48,7 +48,9 @@ class CustomerController extends Controller
             if(!empty($customersRefference)){
                 $customefrsReference  = $customersRefference[0];
                 if( 10 == $customefrsReference->level || 0 == $customefrsReference->points ){
-                    $result  = $this->storeData($aData);
+                    $points = 0;
+                    $level  = 'Level 10';
+                    $result  = $this->storeData($aData,$points,$level);
                 }else{
                     $aLevel  = explode(' ', $customefrsReference->level);
                     if(!empty($aLevel)){
