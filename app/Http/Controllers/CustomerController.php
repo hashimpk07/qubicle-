@@ -47,9 +47,9 @@ class CustomerController extends Controller
                       ->select('level','points' )->where('customers_id', '=',$refferenceCode )->get();
             if(!empty($customersRefference)){
                 $customefrsReference  = $customersRefference[0];
-                if( 10 == $customefrsReference->level || 0 == $customefrsReference->points ){
+                if( 11 == $customefrsReference->level || 0 == $customefrsReference->points ){
                     $points = 0;
-                    $level  = 'Level 10';
+                    $level  = 'Level 11';
                     $result  = $this->storeData($aData,$points,$level);
                 }else{
                     $aLevel  = explode(' ', $customefrsReference->level);
