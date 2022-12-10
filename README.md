@@ -29,9 +29,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
     PDO PHP Extension 
     Tokenizer PHP Extension 
     XML PHP Extension. 
-    
- ## This software is used by teacher to save and display markist of their students.This software is user for Fingent Global Solution Private Limited Machine Test.
- 
+     
  ## Make Sure you have Xampp  or Wams Server if using windows OS and LAMS if using Linux
  ## Make Sure Above PHP 7.3
  
